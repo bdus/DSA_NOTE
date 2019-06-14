@@ -7,10 +7,12 @@
 
 这里总结一些基础语法、STL、数据结构的使用
 
-## Cpp数据结构
+## C++11 数据结构
 
 编译: clang++ -std=c++11
 
+1. ./syntax/stl_vector.cpp
+2. ./syntax/stl_list.cpp
 
 
 ## Python的数据结构
