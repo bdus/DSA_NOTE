@@ -10,9 +10,13 @@
 ## C++11 数据结构
 
 编译: clang++ -std=c++11
+参考： [[cpp reference]](https://zh.cppreference.com/)
 
 1. ./syntax/stl_vector.cpp
 2. ./syntax/stl_list.cpp
+3. ./syntax/stl_queue.cpp
+4. ./syntax/stl_string.cpp
+5. ./syntax/stl_set.cpp
 
 
 ## Python的数据结构
