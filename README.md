@@ -7,9 +7,10 @@
 
 这里总结一些基础语法、STL、数据结构的使用
 
-## C++11 数据结构
+## C++11 STL 数据结构
 
-编译: clang++ -std=c++11
+编译: clang++ -std=c++11 *.cpp
+
 参考： [[cpp reference]](https://zh.cppreference.com/)
 
 1. ./syntax/stl_vector.cpp
@@ -17,9 +18,7 @@
 3. ./syntax/stl_queue.cpp
 4. ./syntax/stl_string.cpp
 5. ./syntax/stl_set.cpp
-
-
-## Python的数据结构
+6. ./syntax/stl_map.cpp
 
 
 # 数据结构实现
@@ -27,3 +26,8 @@
 
 # 剑指offer笔记
 
+[3. 二维数组中的查找](./offer67/3.md)
+
+[4.替换空格](./offer67/4.md)
+
+[5.从尾到头打印链表](./offer67/5.md)

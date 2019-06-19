@@ -25,11 +25,17 @@
 *       back
 *       push_back
 *       pop_front
+*
+* stack 是FILO的栈
+*   push
+*   top
+*   pop
 */
 
 #include <iostream>
 #include <queue>
 #include <deque>
+#include <stack>
 
 using namespace std;
 
@@ -106,6 +112,23 @@ int main()
 
     deque<int> pdemo (qdemo.rbegin(),qdemo.rend());
     cout << "NY"[qdemo.front() == pdemo.back()] << endl; // Y
+
+    cout << "\n\n\n\n\n" << endl;
+
+    /*  --- 初始化 --- */    
+    //stack<int> sdemo {1,2,3};
+    stack<int> sdemo (deque<int> ({1,2,3}));
+
+    // visit
+    sdemo.push(0);
+    sdemo.push(5);
+    sdemo.push(6);
+
+    while(sdemo.size()){
+        cout << sdemo.top() << ' ';
+        sdemo.pop();
+    }   
+    cout << endl;
 
     return 0;
 }
