@@ -26,6 +26,7 @@ namespace MyDSA
         T& operator[] (Rank r) const {return _data[r];}
         T & front() const {return _data[0];}
         T & back() const {return _data[_size-1];}
+        
 
         Rank insert(Rank r, T const & e);
         // Rank insert(Rank r, T * first, T * last);
