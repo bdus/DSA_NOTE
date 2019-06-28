@@ -1,6 +1,8 @@
 #include <iostream>
 #include "vector.h"
 #include "sort.h"
+#include <algorithm>    // std::find
+#include "find.h"
 
 using namespace std;
 
@@ -25,6 +27,11 @@ int main()
         cout << v[i] << ' ';
     cout << endl;    
 
+    //auto p = std::find (&v[0],&v[0]+v.size(), 3);
+    auto p = MyDSA::binFind(&v[0],&v[0]+v.size(), 3);
+    
+    if(p != &v[0]+v.size())
+        cout << *p << endl;
 
     // v.push_back(3);    
     // v.insert(0,0);    

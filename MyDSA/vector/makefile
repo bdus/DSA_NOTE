@@ -15,10 +15,10 @@ OBJS=$(SRCS:.cpp=.o)
 EXE=out
 
 start:$(OBJS)
-	$(CC) -o $(EXE) $(OBJS)
+	$(CC) -std=c++11 -o $(EXE) $(OBJS)
 
 .cpp.o:
-	$(CC) -o $@ -c $<
+	$(CC) -std=c++11 -o $@ -c $<
 
 clean:
 	rm -f $(OBJS)
