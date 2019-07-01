@@ -13,18 +13,29 @@
 
 参考： [[cpp reference]](https://zh.cppreference.com/)
 
-1. ./syntax/stl_vector.cpp
-2. ./syntax/stl_list.cpp
-3. ./syntax/stl_queue.cpp
-4. ./syntax/stl_string.cpp
-5. ./syntax/stl_set.cpp
-6. ./syntax/stl_map.cpp
-
+1. [./syntax/stl_vector.cpp](./syntax/stl_vector.cpp)
+2. [./syntax/stl_list.cpp](./syntax/stl_list.cpp)
+3. [./syntax/stl_queue.cpp](./syntax/stl_queue.cpp)
+4. [./syntax/stl_string.cpp](./syntax/stl_string.cpp)
+5. [./syntax/stl_set.cpp](./syntax/stl_set.cpp)
+6. [./syntax/stl_map.cpp](./syntax/stl_map.cpp)
 
 # 数据结构算法实现
 
-1. MyDSA/vector/vector.h
-2. MyDSA/vector/sort.h
+- [x] MyDSA/vector/vector.h
+- [x] MyDSA/vector/sort.h
+- [ ] MyDSA/vector/find.h
+- [ ] MyDSA/list/forward_list.h
+- [ ] MyDSA/list/dulist.h
+- [ ] MyDSA/queue/queue.h 
+- [ ] MyDSA/queue/deque.h
+- [ ] MyDSA/stack/stack.h
+- [ ] MyDSA/tree/binTree.h
+- [ ] MyDSA/tree/avl.h
+- [ ] MyDSA/graph/AdjMatNet.h
+- [ ] MyDSA/graph/AdjTabNet.h
+
+
 
 # 剑指offer笔记
 
@@ -38,7 +49,7 @@
 
 [27. 二叉搜索树与双向链表](./offer67/27.md)
 
-* [28 字符串的排列](./offer67/28.md)
+- [ ]  [28 字符串的排列](./offer67/28.md)
 
 [29 数组中出现次数超过一半的数字](./offer67/29.md)
 

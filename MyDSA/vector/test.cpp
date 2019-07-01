@@ -28,7 +28,7 @@ int main()
     cout << endl;    
 
     //auto p = std::find (&v[0],&v[0]+v.size(), 3);
-    auto p = MyDSA::binFind(&v[0],&v[0]+v.size(), 3);
+    auto p = MyDSA::binFind(&v[0],&v[0]+v.size(), 10);
     
     if(p != &v[0]+v.size())
         cout << *p << endl;
