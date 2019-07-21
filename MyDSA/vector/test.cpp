@@ -21,7 +21,8 @@ int main()
     cout << endl;    
     // MyDSA::bubbleSort(&v[0],&v[0]+v.size());
     // MyDSA::selectSort(&v[0],&v[0]+v.size());
-    MyDSA::mergeSort(&v[0],&v[0]+v.size());
+    //MyDSA::mergeSort(&v[0],&v[0]+v.size());
+    MyDSA::quickSort(&v[0],&v[0]+v.size());
     
     for(int i  =0; i < v.size(); i++)
         cout << v[i] << ' ';

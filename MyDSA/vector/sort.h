@@ -79,4 +79,25 @@ namespace MyDSA
         mergeSort(first,mid);   mergeSort(mid,last);
         merge(first,mid,last);
     }
+    int * partition(int * first, int * last)
+    {
+        swap(*first,*(first + (rand() % (last - first +1 ) ) ));
+        int pivot = *first;
+        int * mid = first;
+        for(int * k = first+1; k <= last; k++)
+            if( (*k) < pivot )
+            {
+                mid++;
+                swap( *mid, *k );
+            }
+        swap(*first,*mid);
+        return mid;        
+    }
+    void quickSort(int * first, int * last)
+    {
+        if(last - first < 2) return;
+        int * mid = partition(first,last-1);
+        quickSort(first,mid);
+        quickSort(mid+1,last);
+    }
 }
