@@ -3,8 +3,11 @@
 #define _MyDSAVECTOR_H_
 namespace MyDSA
 {
-    #define DEFAULT_CAPACITY 3
+    #ifndef _Rank
+    #define _Rank
     typedef int Rank;
+    #endif
+    #define DEFAULT_CAPACITY 3
     template <typename T>
     class vector
     {

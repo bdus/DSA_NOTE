@@ -10,7 +10,7 @@ namespace MyDSA
         b = tmp;
     }
 
-    //template < class RandomIt > stl中用Iterator隔断算法和容器    
+    //template < class RandomIt > stl中用Iterator隔断算法和容器 
     void bubbleSort(int * first, int * last)
     {        
         for(int * i = first; i < last-1; i++)
