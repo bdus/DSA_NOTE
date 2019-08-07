@@ -52,7 +52,7 @@ int main()
         idx++;
         if(idx != table.size()  )
         {
-            printf("%c:%d,-",i->first,i->second);
+            printf("%c:%d,",i->first,i->second);
         }
         else
         {
