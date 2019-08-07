@@ -1,3 +1,5 @@
+#include "../share/shareHead.h"
+
 #pragma once
 /*
     https://zh.cppreference.com/w/cpp/container/forward_list 
@@ -6,17 +8,13 @@
 #define _MyDSAFORWARDLIST_H_
 namespace MyDSA
 {
-    #ifndef _Rank
-    #define _Rank
-    typedef int Rank;
-    #endif
     template <typename T>
     struct ForwardListNode {
           T val;
           struct ForwardListNode *next;
           ForwardListNode(T x) :
                 val(x), next(NULL) {
-          }
+          }         
     };
 
     template <typename T>

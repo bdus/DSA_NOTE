@@ -4,7 +4,7 @@ namespace MyDSA
 {
     int * binFind(int * first, int * last,int key)
     {
-        int ans = -1;
+        //int ans = -1;
         int * lo = first;
         int * hi = last;
         while (lo < hi)

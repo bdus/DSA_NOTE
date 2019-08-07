@@ -25,8 +25,8 @@
 - [x] MyDSA/vector/vector.h
 - [x] MyDSA/vector/sort.h
 - [ ] MyDSA/vector/find.h
-- [ ] MyDSA/list/forward_list.h
-- [ ] MyDSA/list/dulist.h
+- [x] MyDSA/forward_list/forward_list.h
+- [ ] MyDSA/delist/delist.h
 - [ ] MyDSA/queue/queue.h 
 - [ ] MyDSA/queue/deque.h
 - [ ] MyDSA/stack/stack.h
@@ -35,7 +35,7 @@
 - [ ] MyDSA/graph/AdjMatNet.h
 - [ ] MyDSA/graph/AdjTabNet.h
 
-
+* 注： 上述数据结构只是简化实现 着重功能 仅供学习 并没有进行任何工程处理 (包括但不限于 功能注释、输入判定、内存检查、异常捕获）
 
 # 剑指offer笔记
 
