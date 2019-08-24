@@ -1,11 +1,10 @@
 #include "../share/shareHead.h"
-
-#pragma once
 /*
     https://zh.cppreference.com/w/cpp/container/forward_list 
 */
 #ifndef _MyDSAFORWARDLIST_H_
 #define _MyDSAFORWARDLIST_H_
+
 namespace MyDSA
 {
     template <typename T>
@@ -41,6 +40,10 @@ namespace MyDSA
             T  & front() const; 
             void pop_front();
             void clear();
+
+            ForwardListNode<T> * begin() {return head;};
+            ForwardListNode<T>  * end() {return NULL;};
+            
             ~forward_list();
     };
 }
