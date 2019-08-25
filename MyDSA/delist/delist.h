@@ -1,5 +1,7 @@
 #include "../share/shareHead.h"
-#pragma once
+
+#ifndef _MyDSADELIST_H_
+#define _MyDSADELIST_H_
 namespace MyDSA
 {
     template<typename T>
@@ -23,7 +25,7 @@ namespace MyDSA
         delist();
         delist(Rank count, T const & e);
         delist(T * lo, T * hi);
-        delist(delist & src);
+        delist(delist<T> & src);
         ~delist();
         void assign(Rank count, T const & e);
         void assign(T * lo, T * hi);
@@ -31,15 +33,19 @@ namespace MyDSA
 
         T &  front() { return header->val; };
         T &  back() { return tail->val; };
-        int const & size() const { return _size; } ;
-        void push_front(T const & e);
-        void push_back(T const & e);
-        void pop_front();
-        void pop_back();
+        int const & size() const { return _size; } ;        
        
        void erase(DEListNode<T> * pos);
         void erase(DEListNode<T> * lo, DEListNode<T> * hi);
         void clear();
+        void insert(DEListNode<T> * pos,T const & e);
+        void push_front(T const & e) {insert(header,e); };
+        void push_back(T const & e) {insert(tail->prev,e); };
+        void pop_front() {erase(header->succ);};
+        void pop_back() {erase(tail->prev);};
+
+        DEListNode<T> * begin() {return header->succ;} ;
+        DEListNode<T> *end() {return tail;};
 
         template <typename VST> //操作器
         void traverse ( VST& ); //遍历，依次实施visit操作（函数对象，可全局性修改）
@@ -47,3 +53,5 @@ namespace MyDSA
 }
 
 #include "delist_im.h"
+
+#endif //_MyDSADELIST_H_

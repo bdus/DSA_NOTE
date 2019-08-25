@@ -21,4 +21,20 @@ namespace MyDSA
         std::cout << std::endl;
     }
     #endif //_MyDSAFORWARDLIST_H_
+
+    #ifdef _MyDSADELIST_H_
+    template<typename T>
+    void print(delist<T>  & src )
+    {
+        std::cout << "print delist (size : " << src.size() << "):" << std::endl;
+        DEListNode<T> * itor = NULL;
+        itor = src.begin();
+        while (itor != src.end() )
+        {
+            std::cout <<  itor->val << ' ';
+            itor = itor->succ;
+        }
+        std::cout << std::endl;
+    }
+    #endif //_MyDSADELIST_H_
 }
