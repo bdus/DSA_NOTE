@@ -1,11 +1,19 @@
 
 namespace MyDSA
 {
-    // template<typename T>
-    // void print(delist<T> const & src )
-    // {
-    //     ;
-    // }
+    #ifdef _MyDSAVECTOR_H_
+    template<typename T>
+    void print(vector<T>  & src )
+    {
+        std::cout << "print vector (size : " << src.size() << "):" << std::endl;
+        for(int i = 0; i < src.size(); i++)
+        {
+            std::cout << src[i] << ' ';
+        }
+        std::cout << std::endl;
+    }
+    #endif //_MyDSAVECTOR_H_
+    
     #ifdef _MyDSAFORWARDLIST_H_
     template<typename T>
     void print(forward_list<T>  & src )//void print(forward_list<T>  const & src )

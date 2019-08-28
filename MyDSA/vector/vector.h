@@ -1,6 +1,6 @@
 #include "../share/shareHead.h"
 
-#pragma once
+
 #ifndef _MyDSAVECTOR_H_
 #define _MyDSAVECTOR_H_
 namespace MyDSA
@@ -18,6 +18,7 @@ namespace MyDSA
         void expand();
 
     public:
+        //vector( int c = DEFAULT_CAPACITY, int s = 0, T v = 0 ) { _data = new T[_capacity = c]; for(_size = 0; _size < s; _data[_size++] = v);  }
         vector(T * first, T* last);
         vector(T * addr, int count);
         vector(int count, T const & e);
