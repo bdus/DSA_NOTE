@@ -23,7 +23,17 @@ int main()
     MyDSA::print(wtf);
 
     //TODO1: 几种类型的assign可以重载一个连续插入的insert  重新写
+
     //TODO2: 隐隐约约觉得代码哪里好像有内存泄漏 什么方法可以检查一下呢
+    for(int j = 0; j < 1000; j++) {
+    for(int i = 0; i < 1000000; i++)
+    {
+        wtf.push_back(i);
+    }
+    wtf.clear();
+    }
+    cout << "The size of delist is : " << wtf.size() <<endl;
     
+
     return 0;
 }

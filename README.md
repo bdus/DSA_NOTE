@@ -26,7 +26,7 @@
 - [x] MyDSA/vector/sort.h
 - [ ] MyDSA/vector/find.h
 - [x] MyDSA/forward_list/forward_list.h
-- [ ] MyDSA/delist/delist.h
+- [x] MyDSA/delist/delist.h
 - [ ] MyDSA/queue/queue.h 
 - [ ] MyDSA/queue/deque.h
 - [ ] MyDSA/stack/stack.h
